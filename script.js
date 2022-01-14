@@ -84,7 +84,7 @@ const sr = ScrollReveal({
   distance: "30px",
   duration: 2500,
   delay: 300,
-  reset: true,
+  // reset: true,
 });
 
-sr.reveal(`.login-form`, { origin: "top" });
+sr.reveal(`.login-form`);
