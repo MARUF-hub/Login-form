@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- ==== scroll-Reveal==== -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <!-- ====== Login Section ======= -->
+
+    <section class="login-section" id="login">
+      <div class="login-form">
+        <form action="#" class="form">
+          <h1 class="form-title">Login to continue</h1>
+          <div class="form-div">
+            <input id="email" type="text" class="input-form" placeholder=" " />
+            <label for="email" class="form-label">Email</label>
+          </div>
+          <div class="form-div">
+            <input
+              id="password"
+              type="password"
+              class="input-form"
+              placeholder=" "
+            />
+            <label for="password" class="form-label">password</label>
+          </div>
+          <div class="form-div form-forget">
+            <div>
+              <input type="checkbox" id="checkbox" class="checkbox" />
+              <label for="checkbox" class="forget remember">Remember Me</label>
+            </div>
+            <a id="forget-link" href="#" class="forget-link forget"
+              ><span>Forgotten password?</span></a
+            >
+          </div>
+          <div class="buttons">
+            <input type="button" value="Log In" />
+          </div>
+          <div class="new-account">
+            <h3>
+              Don't have an account? <a id="signBtn" href="#">Sign Up Now</a>
+            </h3>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============= Forget Section ============ -->
+
+    <section class="forget-section" id="forget">
+      <div class="forget-div">
+        <div class="back-icon">
+          <i id="back" class="ri-arrow-left-line"></i>
+        </div>
+        <div class="forget">
+          <h1>Forget your password?</h1>
+          <p class="forget-para">
+            Enter your registered email below to receive password reset link.
+          </p>
+        </div>
+        <div class="icon">
+          <img src="/images/mail-ga0f7c83bd_640.png" alt="" />
+        </div>
+        <div class="form-div">
+          <input type="text" class="input-form" placeholder="Email" />
+        </div>
+        <div class="new-account remember">
+          <h3>
+            Remember password?
+            <a id="login-link" href="#">Login</a>
+          </h3>
+        </div>
+        <div class="buttons send">
+          <input id="send" type="button" value="Send" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============== Reset Password Section ========== -->
+
+    <section class="reset-password" id="reset">
+      <div class="forget-div">
+        <div class="back-icon">
+          <i id="back-2" class="ri-arrow-left-line"></i>
+        </div>
+        <div class="forget">
+          <div class="verify">
+            <h3>Please Enter your verification code below</h3>
+            <div class="form-div">
+              <input
+                type="number"
+                class="input-form"
+                placeholder="verification code"
+              />
+            </div>
+          </div>
+
+          <div class="new-password">
+            <h1>New password</h1>
+            <p class="forget-para">
+              Please create a new password that you didn't use any other site.
+            </p>
+          </div>
+          <div class="form-div">
+            <input
+              id="reset-password"
+              type="text"
+              class="input-form"
+              placeholder=" "
+            />
+            <label for="reset-password" class="form-label">Password</label>
+          </div>
+
+          <div class="form-div">
+            <input id="retype" type="text" class="input-form" placeholder=" " />
+            <label for="retype" class="form-label">Confirm password</label>
+          </div>
+          <div class="buttons send">
+            <input type="button" value="Reset password" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== Sign Up section ========= -->
+
+    <section class="sign-up-section" id="sign-up">
+      <div>
+        <div class="register">
+          <div class="back-icon">
+            <i id="back-3" class="ri-arrow-left-line"></i>
+          </div>
+          <h1 class="title-top">Register Now</h1>
+          <div class="full-name">
+            <div class="form-div name">
+              <i class="ri-user-3-fill"></i>
+              <input type="text" class="input-form" placeholder="First Name " />
+            </div>
+
+            <div class="form-div name">
+              <input type="text" class="input-form" placeholder="Last Name " />
+            </div>
+          </div>
+          <div class="form-div">
+            <i class="ri-mail-fill"></i>
+            <input
+              type="email"
+              class="input-form"
+              placeholder="Enter valid email "
+            />
+          </div>
+          <div class="form-div">
+            <i class="ri-phone-fill"></i>
+            <input
+              type="number"
+              class="input-form"
+              placeholder="Enter valid number "
+            />
+          </div>
+
+          <div class="full-name">
+            <div class="form-div name">
+              <i class="ri-key-fill"></i>
+              <input
+                type="password"
+                class="input-form"
+                placeholder="Create a Password "
+              />
+            </div>
+
+            <div class="form-div name">
+              <input
+                type="password"
+                class="input-form"
+                placeholder="Confirm password  "
+              />
+            </div>
+          </div>
+
+          <div class="full-name">
+            <div class="form-div name">
+              <h3 class="date-title">Your Date of Birth:</h3>
+              <i class="ri-calendar-fill"></i>
+              <input
+                type="date"
+                class="input-form"
+                placeholder="Enter Your Birthday"
+              />
+            </div>
+
+            <div class="form-div name">
+              <h3 class="date-title gender-title">Gender:</h3>
+              <div class="gender">
+                <div>
+                  <input type="radio" id="male" name="gender" />
+                  <label for="male">Male</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="female" name="gender" />
+                  <label for="female">Female</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="other" name="gender" />
+                  <label for="other">Other</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="country">
+            <div class="form-div name">
+              <h3 class="date-title">Your Country:</h3>
+              <i class="ri-home-fill"></i>
+              <select
+                class="country-select"
+                value="Select a country"
+                placeholder="country"
+              >
+                <option selected>Select a country</option>
+                <option>Bangladesh</option>
+                <option>United States</option>
+                <option>India</option>
+                <option>Australia</option>
+              </select>
+            </div>
+          </div>
+          <div class="terms">
+            <div>
+              <input type="checkbox" id="check" class="checkbox" />
+              <label for="check"
+                >I agree all statements in Terms of services</label
+              >
+            </div>
+          </div>
+          <div class="buttons">
+            <input type="submit" value="Submit" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== link javascript =========== -->
+
+    <script src="/script.js"></script>
+  </body>
+</html>
