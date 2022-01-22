@@ -2,25 +2,25 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(110, 109, 109);
 }
 html {
   font-size: 62.5%;
 }
-* {
-  box-sizing: border-box;
-}
 
 /* ======== Login Section ======== */
 
-.login-section {
+section.login-section {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff;
   /* display: none; */
 }
-.login-form {
+div.login-form {
   font-family: "Lato", sans-serif;
   background: aliceblue;
   display: flex;
@@ -29,7 +29,7 @@ html {
   border-radius: 1rem;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15);
 }
-.form {
+form.form {
   width: 400px;
   padding: 2rem;
 }
@@ -43,12 +43,12 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.form-div {
+div.form-div {
   position: relative;
   height: 20px;
   margin-bottom: 5rem;
 }
-.input-form {
+input.input-form {
   position: absolute;
   top: 0;
   left: 0;
@@ -66,7 +66,7 @@ html {
   z-index: 1;
   box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1;
 }
-.form-label {
+label.form-label {
   position: absolute;
   top: 1.5rem;
   left: 1.5rem;
@@ -75,12 +75,12 @@ html {
   transition: all 0.3s ease;
   z-index: 4;
 }
-.form-forget {
+div.form-forget {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.forget-link,
+a.forget-link,
 .forget {
   text-decoration: none;
   font-size: 1.5rem;
@@ -94,7 +94,7 @@ html {
   text-decoration: underline;
 }
 
-.input-form:focus + .form-label {
+input.input-form:focus + label.form-label {
   top: -1.5rem;
   left: 1rem;
   border-radius: 50%;
@@ -105,7 +105,8 @@ html {
   background: aliceblue;
   z-index: 10;
 }
-.input-form:not(:placeholder-shown).input-form:not(:focus) + .form-label {
+input.input-form:not(:placeholder-shown).input-form:not(:focus)
+  + label.form-label {
   top: -1.5rem;
   left: 1rem;
   padding: 0.5rem;
@@ -116,11 +117,11 @@ html {
   border-radius: 50%;
   z-index: 10;
 }
-.input-form:focus {
+input.input-form:focus {
   border: 2px solid #1a73e8;
 }
 
-.buttons {
+div.buttons {
   display: block;
   text-align: center;
 }
@@ -128,7 +129,7 @@ html {
 .checkbox {
   cursor: pointer;
 }
-.buttons input {
+div.buttons input {
   width: 100%;
   font-size: 1.8rem;
   font-weight: 600;
@@ -141,60 +142,69 @@ html {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.buttons input:hover {
+div.buttons input:hover {
   background-color: #1161ca;
 }
-.new-account {
+div.new-account {
   margin-top: 1rem;
   padding: 2rem;
 }
-.new-account h3 {
+div.new-account h3 {
   font-size: 1.5rem;
   font-weight: 500;
 }
-.new-account h3 a {
+div.new-account h3 a {
   font-weight: 600;
   text-decoration: none;
   padding: 0 0.1rem;
   color: #1161ca;
 }
-.new-account h3 a:hover {
+div.new-account h3 a:hover {
   text-decoration: underline;
 }
 
 /* ========== Forget Section ========== */
 
-.forget-section {
+section.forget-section {
   display: flex;
   align-items: center;
   margin-top: 5rem;
   font-family: "Lato", sans-serif;
   display: none;
 }
-.back-icon {
+div.back-icon {
   position: relative;
   align-self: flex-start;
   top: -3rem;
 }
-.back-icon i {
+div.back-icon i {
   font-size: 2rem;
   cursor: pointer;
   padding: 1rem;
   border-radius: 50%;
   background: white;
 }
-.back-icon i:hover {
+div.back-icon i:hover {
   box-shadow: inset -3px -3px 7px #ffffff, inset 3px 3px 7px #ceced1;
 }
-.icon img {
+div.icon img {
   display: block;
   margin: auto;
   width: 75%;
   padding: 2rem;
 }
 
-/* ======== Forget section ============ */
-.forget-div {
+/* ======== Reset section ============ */
+section.reset-password {
+  margin-top: 8rem;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+div.forget-div {
   box-sizing: border-box;
   text-align: center;
   width: 400px;
@@ -207,59 +217,51 @@ html {
   flex-direction: column;
   justify-content: center;
 }
-
-.reset-password {
-  margin-top: 8rem;
-  font-family: "Lato", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: none;
+div.forget {
+  color: rgb(37, 35, 35);
 }
-.verify {
+
+div.verify {
   border-bottom: 2px solid #adadfe;
   padding-bottom: 3rem;
 }
-.forget {
-  color: rgb(37, 35, 35);
-}
-.forget h1 {
+div.forget h1 {
   font-size: 2.5rem;
   padding: 2rem 0rem;
   text-decoration: none;
   font-weight: 500;
 }
-.forget p {
+div.forget p {
   padding: 0 3rem;
   color: gray;
 }
-.send input {
+div.send input {
   border-radius: 50px;
   font-weight: 400;
   margin-top: 1rem;
 }
 
-.verify h3 {
+div.verify h3 {
   padding-bottom: 4rem;
   font-weight: 500;
 }
-.verify h3:hover {
+div.verify h3:hover {
   text-decoration: none;
 }
-.new-password {
+div.new-password {
   padding: 3.5rem 0;
 }
 
 /* ========== Sign_up Section ========= */
 
-.sign-up-section {
+section.sign-up-section {
   padding: 2rem 0;
   width: 100%;
   display: block;
   margin: auto;
   display: none;
 }
-.register {
+div.register {
   background: aliceblue;
   width: 55%;
   margin: auto;
@@ -280,14 +282,14 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.full-name {
+div.full-name {
   display: flex;
   justify-content: space-between;
 }
-.full-name .name {
+div.full-name .name {
   width: 40%;
 }
-.register :not(.back-icon) i {
+div.register :not(.back-icon) i {
   font-size: 2.5rem;
   margin-top: 0.09rem;
   padding: 1.2rem;
@@ -297,7 +299,7 @@ html {
   color: white;
   border-radius: 4px;
 }
-.register .back-icon {
+div.register .back-icon {
   top: -1rem;
   left: -8rem;
 }
@@ -305,29 +307,29 @@ input[type="date"] {
   position: relative;
   cursor: pointer;
 }
-.name .date-title {
+div.name .date-title {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.8rem;
   padding: 2rem 0 0.5rem 0.5rem;
   font-weight: 600;
   color: gray;
 }
-.gender label {
+div.gender label {
   cursor: pointer;
   font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: gray;
 }
-.gender {
+div.gender {
   padding: 1rem;
   display: flex;
   justify-content: space-evenly;
 }
-.country {
+div.country {
   margin-top: 3rem;
 }
-.country-select {
+select.country-select {
   width: 70%;
   padding: 1.5rem 5rem;
   font-size: 2rem;
@@ -340,10 +342,10 @@ input[type="date"] {
 
 /* ========= Terms =========== */
 
-.terms {
+div.terms {
   margin: 10rem 0 4rem 0;
 }
-.terms label {
+div.terms label {
   font-family: "Poppins", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -354,53 +356,56 @@ input[type="date"] {
 /* ========= Responsive ===========  */
 
 @media screen and (max-width: 1025px) {
-  .full-name {
+  div.full-name {
     flex-direction: column;
   }
-  .full-name .name {
+  div.full-name .name {
     width: 100%;
   }
-  .register {
+  div.register {
     padding: 4rem 5rem 10rem 10rem;
   }
-  .name .gender-title {
+  div.name .gender-title {
     margin-top: 2rem;
   }
-  .country-select {
+  select.country-select {
     font-size: 1.5rem;
     padding: 1.5rem 2rem;
   }
 }
 @media screen and (max-width: 769px) {
-  .register {
+  div.register {
     width: 80%;
   }
-  div.buttons input[type="submit"] {
+  div.buttons .submit {
     margin-left: -4rem;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .form,
-  .forget-div {
+  section.reset-password {
+    margin-top: 5rem;
+  }
+  form.form,
+  div.forget-div {
     width: 350px;
   }
-  .register {
+  div.register {
     width: 90%;
     padding: 4rem 2rem 10rem 7rem;
   }
-  .register .back-icon {
+  div.register .back-icon {
     left: -5rem;
   }
-  .input-form {
+  input.input-form {
     padding: 2.3rem 2rem;
     font-size: 1.5rem;
   }
-  .form-label {
+  label.form-label {
     top: 1.3rem;
     font-size: 1.5rem;
   }
-  .register :not(.back-icon) i {
+  div.register :not(.back-icon) i {
     margin-top: 0.4rem;
     left: -4.8rem;
     font-size: 1.5rem;

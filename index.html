@@ -21,7 +21,13 @@
         <form action="#" class="form">
           <h1 class="form-title">Login to continue</h1>
           <div class="form-div">
-            <input id="email" type="text" class="input-form" placeholder=" " />
+            <input
+              id="email"
+              type="text"
+              class="input-form"
+              placeholder=" "
+              required
+            />
             <label for="email" class="form-label">Email</label>
           </div>
           <div class="form-div">
@@ -30,6 +36,7 @@
               type="password"
               class="input-form"
               placeholder=" "
+              required
             />
             <label for="password" class="form-label">password</label>
           </div>
@@ -43,7 +50,7 @@
             >
           </div>
           <div class="buttons">
-            <input type="button" value="Log In" />
+            <input type="submit" value="Log In" />
           </div>
           <div class="new-account">
             <h3>
@@ -243,7 +250,7 @@
             </div>
           </div>
           <div class="buttons">
-            <input type="submit" value="Submit" />
+            <input class="submit" type="submit" value="Submit" />
           </div>
         </div>
       </div>
